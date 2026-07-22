@@ -1,11 +1,17 @@
-#Conversor de Medidas
+#Maior e menor Valores
 
-d = float(input('Digite uma distância em metros: '))
-km = d / 1000
-hm = d / 100
-dam = d / 10
-dm = d * 10
-cm = d * 100
-mm = d * 1000
-
-print(f'A medida {d} metros é:\n {km}km\n {hm}hm\n {dam}dam\n {dm}dm\n {cm}cm\n {mm}mm')
+n1 = float(input('Digite o primeiro valor: '))
+n2 = float(input('Digite o segunto valor: '))
+n3 = float(input('Digite o terceiro valor: '))
+if n1>n2>3:
+    print(f'O maior número é: {n1}')
+if n2>n1>n3:
+    print(f'O maior número é: {n2}')
+else: 
+    print(f'O maior número é: {n3}')
+if n1<n2<n3:
+    print(f'O menor número é: {n1}')
+if n2<n1<n3:
+    print(f'O menor número é: {n2}')
+if n3<n1<n2:
+    print(f'O menor número é: {n3}')
