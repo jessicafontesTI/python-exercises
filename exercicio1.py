@@ -1,7 +1,14 @@
-#DOBRO, TRIPLO, RAIZ QUADRADA
+#Jogo da adivinhação
 
-num = int (input('Digite um número: '))
-dobro = num+num
-triplo = num*3
-raiz = num**(1/2)
-print(f'O Dobro de {num} vale: {dobro}\n O triplo de {num} vale: {triplo}\n A raiz quadrada de {num} vale: {raiz: .2f}')
+import random
+from time import sleep
+print('--**--'*10)
+pc = random.randint(1 , 5)
+usuario = int(input('Qual número você acha que será sorteado?Escolha um número de 1 a 5:  '))
+print('--/'*10)
+print(f'Processando....')
+sleep(3)
+if pc == usuario:
+    print(f'True, o número sorteado foi {pc}')
+else:
+    print(f'False, o número foi {pc}')
