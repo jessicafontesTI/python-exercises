@@ -1,0 +1,7 @@
+#DOBRO, TRIPLO, RAIZ QUADRADA
+
+num = int (input('Digite um número: '))
+dobro = num+num
+triplo = num*3
+raiz = num**(1/2)
+print(f'O Dobro de {num} vale: {dobro}\n O triplo de {num} vale: {triplo}\n A raiz quadrada de {num} vale: {raiz: .2f}')
