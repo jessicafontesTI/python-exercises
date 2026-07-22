@@ -1,7 +1,22 @@
-#Pintar Parede
+#Classificando atletas
 
-a = float(input('Digite a altura da parede: '))
-l = float(input('Digite a largura da parede: '))
-r = a * l
-t = r / 2
-print(f'Sua parede tem dimensão de {a:.2f} x {l:.2f} e sua área é {r}m²\n Para pintar essa parede você precisará de {t:.2f} Litros de tinta.') 
+from datetime import date
+atual = date.today().year
+nasc = int(input('Digite seu ano de nascimento: '))
+
+anos = atual - nasc
+
+if anos <= 9:
+    print(f'Você tem {anos} anos e sua categoria é MIRIM')
+
+elif anos > 9 and anos <= 14:
+    print(f'Você tem {anos} anos e sua categoria é INFANTIL')
+
+elif anos > 14 and anos <= 19:
+    print(f'Você tem {anos} anos e sua categoria é JUNIOR')
+
+elif anos > 19 and anos <= 25:
+    print(f'Você tem {anos} anos e sua categoria é SÊNIOR')
+
+else:
+    print(f'Você tem {anos} anos e sua categoria é MASTER')
