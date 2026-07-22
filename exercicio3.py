@@ -1,4 +1,4 @@
-#Conversor de moedas 
+#Conversor de Medidas
 
 d = float(input('Digite uma distância em metros: '))
 km = d / 1000
