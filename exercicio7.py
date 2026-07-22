@@ -1,0 +1,5 @@
+#Calculando descontos
+
+p = float(input('Quanto custa o preço do produto R$? '))
+d =  p - (p * 5 / 100)
+print(f'O preço original é {p} e com desconto de 5% fica {d:.2f}')
