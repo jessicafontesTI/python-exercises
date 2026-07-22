@@ -1,0 +1,5 @@
+#Conversor de temperaturas
+
+t = float(input('Digite a temperatura do ambiente em C°: '))
+r = (9 * t / 5) + 32 
+print(f" A temperatura {t}C° corresponde a {r}°F")
