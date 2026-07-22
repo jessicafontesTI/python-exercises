@@ -1,7 +1,19 @@
-#Tabuada
+#Alistamento Militar
 
-print('--' * 12)
-t = int(input('Digite um número: '))
-print('--' * 12)
-print(f' {t} x {1:2} = {t*1:2}\n {t} x {2:2} = {t*2:2}\n {t} x {3:2} = {t*3:2}\n {t} x {4:2} = {t*4:2}\n {t} x {5:2} = {t*5:2}\n {t} x {6:2} = {t*6:2}\n {t} x {7:2} = {t*7:2}\n {t} x {8:2} = {t*8:2}\n {t} x {9:2} = {t*9:2}\n {t} x {10:2} = {t*10:2}')
-print('--' * 12)
+from datetime import date
+atual = date.today().year
+
+data = int(input('Qual oi seu ano de nascimento? '))
+
+anos = atual - data
+
+if anos == 18:
+    print('Você deve se alistar IMEDIATAMENTE')
+
+elif anos < 18:
+    falta = 18 - anos
+    print(f'Você tem {anos} anos e deverá se alistar em {falta} ano(s)')
+
+else:
+    atraso = anos - 18
+    print(f'Você tem {anos} anos e deveria ter se alistado há {atraso} ano(s)')
