@@ -1,5 +1,12 @@
-#Comversor de moedas
+#Média
 
-d = float(input('Quanto dinheiro você tem na carteira?\n Digite aqui: '))
-c = d / 5.4
-print(f'Com R${d:.2f} reais você pode comprar U${c:.2f}')
+n1 = float (input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+media = (n1 + n2) / 2
+
+if media >= 7:
+    print(f'Sua media foi {media} e você está APROVADO')
+elif media < 7 and media >= 5:
+    print(f'Sua média foi {media} e você está de RECUPERAÇÃO')
+else:
+    print(f'Sua média foi {media} e você está REPROVADO')
