@@ -1,5 +1,18 @@
-#Calculando descontos
+#Analisando Triângulos
 
-p = float(input('Quanto custa o preço do produto R$? '))
-d =  p - (p * 5 / 100)
-print(f'O preço original é {p} e com desconto de 5% fica {d:.2f}')
+r1 = float(input('Digite um valor: '))
+r2 = float(input('Digite mais um valor: '))
+r3 = float(input('Para finalizar digite o último valor: '))
+
+if (r1 + r2) > r3 and (r2 + r3) > r1 and (r3 + r1) > r2:
+    print('Os lados formam um triângulo')
+
+    if r1 == r2 == r3:
+        print('Esse triângulo é EQUILÁTERO')
+    elif r1 == r2 or r2 == r3 or r3 == r1:
+        print('Esse triângulo é ISÓSCELES')
+    else:
+        print('Esse triângulo é ESCALENO')
+
+else:
+    print('Os lados NÃO formam um triângulo')
