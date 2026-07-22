@@ -1,6 +1,13 @@
-#Média aritmética
+#Custo da viagem
 
-n1 = float(input('Digite a nota do aluno: '))
-n2 = float(input('Digite a segunda nota do aluno: '))
-media = (n1+n2) / 2
-print(f'A média entre {n1} e {n2} é igual a {media}')
+from time import sleep
+viagem = int(input('Qual a distância da Viagem?\nDigite aqui: '))
+print('CALCULANDO...')
+sleep (3)
+print(f'Você está prestes a começar uma viagem de {viagem}Km')
+if viagem <=200:
+    calculo = viagem * 0.50
+    print(f'O preço da sua viagem é de R${calculo:.2f} reais')
+else:
+    calculo2 = viagem * 0.45
+    print(f'O preço da sua viagem é de R${calculo2:.2f} reais')
